@@ -39,6 +39,7 @@ public class Venta {
 		System.out.println("+---------------------------------------------+");
 		System.out.println("   - TOTAL : " + total);
 		System.out.println("+---------------------------------------------+");
+		System.out.println("---  El nuevo stock para " + producto.getNombre() + " es: " + producto.getStock());
 	}
 	
 
