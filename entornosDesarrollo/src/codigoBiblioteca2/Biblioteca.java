@@ -16,7 +16,7 @@ public class Biblioteca {
 		// Realizar un préstamo
 		Prestamo prestamo = new Prestamo(libro, usuario, 14);
 		usuario.tomarPrestado(prestamo);
-
+		usuario.listarPrestamos();
 		// Imprimir información del préstamo
 		ArrayList<String> tablaP = prestamo.generarRecibo();
 		prestamo.mostrarInfo(tablaP);
@@ -27,6 +27,8 @@ public class Biblioteca {
 		// Mostrar la información del libro después de la devolución
 		ArrayList<String> tablaL = libro.crearInfo();
 		libro.mostrarInfo(tablaL);
+		
+		
 		
 		
 	}
